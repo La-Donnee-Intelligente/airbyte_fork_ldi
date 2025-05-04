@@ -69,10 +69,10 @@ public class OracleOperations implements SqlOperations {
         """
           CREATE TABLE %s.%s (
           %s VARCHAR(64) PRIMARY KEY,
-          %s JSON,
+          %s NCLOB,
           %s TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
           %s TIMESTAMP WITH TIME ZONE DEFAULT NULL,
-          %s JSON
+          %s NCLOB
           )
         """,
         schemaName, tableName,
